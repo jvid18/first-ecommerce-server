@@ -3,7 +3,7 @@ import { MONGODB_URL } from '../config'
 
 (async () => {
   const db = await connect(MONGODB_URL, {
-    useNewUrlparser: true,
+    useNewUrlParser: true,
     useUnifiedTopology: true,
   })
   console.log('Database connected to:', db.connection.name);
